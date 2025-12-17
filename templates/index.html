@@ -1,1 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Market Predictor</title>
+</head>
+<body style="font-family:Arial; text-align:center; padding:40px;">
+    <h1>📈 AI Stock Market Predictor</h1>
 
+    <form method="POST">
+        <input name="stock" placeholder="Enter Stock Symbol (AAPL)" required>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if price %}
+        <h2>Predicted Next Price: ${{ price }}</h2>
+    {% endif %}
+</body>
+</html>
